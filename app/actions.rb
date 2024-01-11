@@ -1,1 +1,3 @@
-print "Hello it is me.\n"
+get '/' do
+    File.read(File.join('app/views', 'index.html'))
+end
